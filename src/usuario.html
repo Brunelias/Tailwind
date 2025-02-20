@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Usuario</title>
+</head>
+
+<body class="flex flex-col min-h-screen bg-yellow-950/50 bg-opacity-40">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center bg-yellow-950/50 text-black p-3">
+        <a href="javascript:window.history.back();" class="w-10 h-10">
+            <img src="../img/voltar.png" alt="Voltar" class="w-10 h-10">
+        </a>
+        <a href="/src/index.html" class="flex items-center">
+            <div class="flex items-center">
+                <img src="../img/logo.png" alt="Logo" class="w-12 h-12">
+                <span class="ml-2">Início</span>
+            </div>
+        </a>
+        <a href="/src/usuario.html">
+            <img src="../img/usuario.png" alt="Usuário" class="w-10 h-10">
+        </a>
+    </header>
+
+    <!-- Footer com barra de pesquisa -->
+    <footer class="bg-yellow-950/25 p-3 flex justify-center items-center">
+        <div class="flex bg-white rounded-full p-2 w-full max-w-xs">
+            <input type="text" placeholder="Pesquisar..."
+                class="flex-grow bg-white pl-2 italic text-sm border-none h-8 focus:outline-none">
+            <img src="../img/busca.png" alt="Buscar" class="w-7 h-7 ml-2">
+        </div>
+    </footer>
+
+    <!-- Container de botões de controle -->
+    <section class="flex flex-col items-center p-4 bg-white w-full">
+        <h1 class="text-3xl font-bold mb-4">Bem-vindo</h1>
+        <div class="flex justify-center">
+            <a href="/src/AdicionarReceita.html"
+                class="bg-yellow-950 text-white px-6 py-2 rounded-full shadow-md mx-2 text-center">Adicionar Nova
+                Receita</a>
+            <button class="bg-yellow-950 text-white px-6 py-2 rounded-full shadow-md mx-2">Ver Minhas Receitas</button>
+        </div>
+    </section>
+
+    <!-- Indicados para Você -->
+    <main class="flex-grow flex flex-col items-center p-3 bg-white w-full">
+        <h1 class="text-xl font-bold mb-4">Indicados para Você</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-5xl p-3">
+            <a href="/src/boloCenoura.html">
+                <div
+                    class="flex items-center border rounded-lg p-4 shadow-lg bg-white w-full hover:bg-gray-100 transition">
+                    <img src="../img/boloCenoura.jpg" alt="Imagem Receita" class="w-20 h-20 mr-4">
+                    <div>
+                        <h2 class="text-lg font-bold">Bolo de Cenoura</h2>
+                        <p class="text-sm text-gray-600">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, obcaecati id nobis nulla quo
+                            laborum
+                            blanditiis totam eius iure facere consequatur veniam sapiente nostrum aut dolorem,
+                            perspiciatis
+                            consectetur quas error!
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <div class="flex items-center border rounded-lg p-4 shadow-lg bg-white w-full">
+                <img src="../img/pizza.jpg" alt="Imagem Receita" class="w-20 h-20 mr-4">
+                <div>
+                    <h2 class="text-lg font-bold">Pizza Rápida</h2>
+                    <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor in
+                        quo dolorem molestiae velit facilis temporibus quidem at quae ab, saepe asperiores ex voluptates
+                        vitae, odit quas tempora deleniti sit.</p>
+                </div>
+            </div>
+            <div class="flex items-center border rounded-lg p-4 shadow-lg bg-white w-full">
+                <img src="../img/tortaMaracuja.jpg" alt="Imagem Receita" class="w-20 h-20 mr-4">
+                <div>
+                    <h2 class="text-lg font-bold">Torta de Maracujá</h2>
+                    <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+                        assumenda explicabo, ipsam cumque saepe ipsum exercitationem ratione, laudantium voluptatum
+                        consequatur quo. Quam, natus. Expedita ab pariatur nihil odit, molestias id!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Sair -->
+    <div class="flex justify-center items-center p-6 w-full bg-white">
+        <a href="/src/login.html" class="bg-yellow-950 text-white px-6 py-2 rounded-full shadow-md">Sair</a>
+    </div>
+
+
+    <!-- Footer sem a Barra de Pesquisa -->
+    <footer class="bg-yellow-950/50 p-5 flex justify-center items-center">
+        <p class="text-sm text-white">© 2025 Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>

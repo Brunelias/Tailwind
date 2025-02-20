@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>addReceita</title>
+
+    <script>
+        function addInput(containerId) {
+            const container = document.getElementById(containerId);
+            const newInput = document.createElement('input');
+            newInput.type = 'text';
+            newInput.placeholder = containerId === 'ingredientes-container' ? 'Ingrediente' : 'Passo do preparo';
+            newInput.classList.add('w-full', 'p-2', 'border', 'rounded');
+            container.appendChild(newInput);
+        }
+    </script>
+
+</head>
+
+<body class="flex flex-col min-h-screen bg-yellow-950/50">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center bg-yellow-950/50 text-black p-3">
+        <a href="javascript:window.history.back();" class="w-10 h-10">
+            <img src="../img/voltar.png" alt="Voltar" class="w-10 h-10">
+        </a>
+        <a href="/src/index.html" class="flex items-center">
+            <div class="flex items-center">
+                <img src="../img/logo.png" alt="Logo" class="w-12 h-12">
+                <span class="ml-2">Início</span>
+            </div>
+        </a>
+        <a href="/src/usuario.html">
+            <img src="../img/usuario.png" alt="Usuário" class="w-10 h-10">
+        </a>
+    </header>
+
+    <!-- Footer com barra de pesquisa -->
+    <footer class="bg-yellow-950/25 p-3 flex justify-center items-center">
+        <div class="flex bg-white rounded-full p-2 w-full max-w-xs">
+            <input type="text" placeholder="Pesquisar..."
+                class="flex-grow bg-white pl-2 italic text-sm border-none h-8 focus:outline-none">
+            <img src="../img/busca.png" alt="Buscar" class="w-7 h-7 ml-2">
+        </div>
+    </footer>
+    <!-- Container Principal -->
+    <main class="flex-grow flex flex-col items-center justify-center p-6 bg-white w-full">
+
+        <!-- Formulário Ingredientes -->
+        <section class="w-full flex flex-col items-center">
+            <h2 class="text-2xl font-bold mb-2">Descreva os ingredientes</h2>
+            <div id="ingredientes-container" class="w-full flex flex-col gap-2">
+                <input type="text" placeholder="Ingrediente" class="w-full p-2 border rounded">
+            </div>
+            <img src="../img/mais.png" alt="Adicionar" class="w-10 h-10 cursor-pointer mt-2"
+                onclick="addInput('ingredientes-container')">
+        </section>
+
+        <!-- Formulário Modo de Preparo -->
+        <section class="w-full flex flex-col items-center">
+            <h2 class="text-2xl font-bold mb-2">Descreva o modo de preparo</h2>
+            <div id="preparo-container" class="w-full flex flex-col gap-2">
+                <input type="text" placeholder="Passo do preparo" class="w-full p-2 border rounded">
+            </div>
+            <img src="../img/mais.png" alt="Adicionar" class="w-10 h-10 cursor-pointer mt-2"
+                onclick="addInput('preparo-container')">
+        </section>
+
+        <!-- Botão de Envio -->
+        <div class="w-full flex justify-center p-5">
+            <a href="/src/usuario.html"
+                class="bg-yellow-950 text-white px-6 py-2 rounded-full shadow-md text-center">Enviar</a>
+        </div>
+    </main>
+
+    <!-- Footer sem a Barra de Pesquisa -->
+    <footer class="bg-yellow-950/50 p-5 flex justify-center items-center">
+        <p class="text-sm text-white">© 2025 Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>

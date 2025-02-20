@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Bolo de Cenoura</title>
+</head>
+
+<body class="flex flex-col min-h-screen bg-yellow-950/50">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center bg-yellow-950/50 text-black p-3">
+        <a href="javascript:window.history.back();" class="w-10 h-10">
+            <img src="../img/voltar.png" alt="Voltar" class="w-10 h-10">
+        </a>
+        <a href="/src/index.html" class="flex items-center">
+            <div class="flex items-center">
+                <img src="../img/logo.png" alt="Logo" class="w-12 h-12">
+                <span class="ml-2">Início</span>
+            </div>
+        </a>
+        <a href="/src/usuario.html">
+            <img src="../img/usuario.png" alt="Usuário" class="w-10 h-10">
+        </a>
+    </header>
+
+    <!-- Footer com barra de pesquisa -->
+    <footer class="bg-yellow-950/25 p-3 flex justify-center items-center">
+        <div class="flex bg-white rounded-full p-2 w-full max-w-xs">
+            <input type="text" placeholder="Pesquisar..."
+                class="flex-grow bg-white pl-2 italic text-sm border-none h-8 focus:outline-none">
+            <img src="../img/busca.png" alt="Buscar" class="w-7 h-7 ml-2">
+        </div>
+    </footer>
+
+    <!-- Container Principal -->
+    <main class="flex-grow flex flex-col items-center p-6 w-full bg-white">
+
+        <!-- Imagem -->
+        <div class="relative w-full max-w-4xl h-48 flex items-center justify-center">
+            <div class="absolute inset-0 bg-cover bg-center"
+                style="background-image: url('../img/boloCenoura.jpg'); opacity: 0.75;"></div>
+            <h1 class="relative text-black text-3xl font-bold">Bolo de Cenoura</h1>
+        </div>
+
+        <!-- Ingredientes -->
+        <section class="w-full max-w-4xl mt-6">
+            <h2 class="text-2xl font-bold mb-4">Ingredientes:</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <p class="p-3 w-full rounded border border-gray-300 bg-white">1/2 xícara (chá) de óleo</p>
+                <p class="p-3 w-full rounded border border-gray-300 bg-white">3 cenouras médias raladas</p>
+                <p class="p-3 w-full rounded border border-gray-300 bg-white">4 ovos</p>
+                <p class="p-3 w-full rounded border border-gray-300 bg-white">2 xícaras (chá) de açúcar</p>
+                <p class="p-3 w-full rounded border border-gray-300 bg-white">2 e 1/2 xícaras (chá) de farinha de trigo
+                </p>
+                <p class="p-3 w-full rounded border border-gray-300 bg-white">1 colher (sopa) de fermento em pó</p>
+            </div>
+        </section>
+
+        <!-- Modo de Preparo -->
+        <section class="w-full max-w-4xl mt-6">
+            <h2 class="text-2xl font-bold mb-4">Modo de Preparo:</h2>
+            <div class="flex flex-col gap-4">
+                <p class="p-3 w-full rounded border border-gray-300 bg-white">Em um liquidificador, adicione a cenoura,
+                    os ovos e o óleo, depois misture.</p>
+                <p class="p-3 w-full rounded border border-gray-300 bg-white">Acrescente o açúcar e bata novamente por 5
+                    minutos.</p>
+                <p class="p-3 w-full rounded border border-gray-300 bg-white">Em uma tigela ou na batedeira, adicione a
+                    farinha de trigo e depois misture novamente.</p>
+                <p class="p-3 w-full rounded border border-gray-300 bg-white">Acrescente o fermento e misture lentamente
+                    com uma colher.</p>
+                <p class="p-3 w-full rounded border border-gray-300 bg-white">Asse em um forno preaquecido a 180° C por
+                    aproximadamente 40 minutos.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer sem a Barra de Pesquisa -->
+    <footer class="bg-yellow-950/50 p-5 flex justify-center items-center">
+        <p class="text-sm text-white">© 2025 Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>
